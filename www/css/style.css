@@ -1,0 +1,569 @@
+/* ===== Reset start ===== */
+* {
+	box-sizing: border-box;
+}
+*:focus {
+	outline: none;
+}
+body {
+	margin: 0;
+	background-color: #fff;
+	color: #777;
+	font: 300 15px/1 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: normal;
+}
+p {
+	margin: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: none;
+}
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+input, textarea, button {
+	outline: none;
+	border: none;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+textarea {
+	resize: vertical;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+blockquote {
+	margin: 0;
+}
+/* ===== Reset end ===== */
+/* ===== Default classes start */
+/* 
+	text color, text align, float, backgrounds colors, text transform
+*/
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify {
+	text-align: justify;
+}
+.bg-black {
+	background-color: #111;
+}
+.bg-grey {
+	background-color: #f8f8f8;
+}
+/* ===== Default classes end */
+/* ===== Default component start ===== */
+/* 
+	Buttons, text, title, section, small-section header, footer,
+	form elements, icons, tabs, blockquote, container 
+*/
+.default-section {
+	padding: 135px 0;
+}
+.small-section {
+	padding: 70px 0;
+}
+.container {
+	max-width: 1200px; /* 1200 - 30 = 1170 */
+	padding: 0 15px;
+	margin: auto;
+}
+.container-fluid {
+	padding: 0 15px;
+}
+.title {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	color: #111;
+}
+.title.title-white {
+	color: #fff;
+}
+.title.section-title {
+	font-size: 18px;
+	letter-spacing: .5em; /* 0.5em = .5em */
+	margin-bottom: 75px;
+	font-weight: 400;
+}
+.title.section-title-light {
+	font-size: 18px;
+	letter-spacing: .3em;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+.default-text {
+	font-size: 15px;
+	line-height: 1.7333;
+	font-weight: 300;
+}
+blockquote, 
+.blockquote {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+blockquote span, 
+.blockquote span {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+.btn {
+	display: inline-block;
+	padding: 12px 20px;
+	border-radius: 2px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .2em;
+}
+.btn[disabled] {
+	cursor: not-allowed;
+	opacity: .6;
+}
+.btn.btn-default {
+	background-color: #e5e5e5;
+	color: #777;
+}
+.btn.btn-default:hover {
+	background-color: #d1d0d0;
+}
+.btn.btn-black {
+	background-color: #323232;
+	color: #fff;
+}
+.btn.btn-black:hover {
+	background-color: #000;
+}
+.btn.btn-xs {
+	padding: 7px 15px;
+	font-size: 11px;
+}
+.form-control {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #777;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.form-control:focus {
+	border-color: #111;
+}
+textarea.form-control {
+	min-height: 82px;
+	padding-top: 10px;
+}
+.form-control[disabled],
+.form-control.disabled{
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-control.error {
+	border-color: #f57e7e;
+}
+.form-info {
+	font-size: 11px;
+	font-weight: 400;
+	color: #aaa;
+}
+.form-info i .fa{
+	font-size: 12px;
+}
+.footer .logo {
+	margin-top: 140px;
+	margin-bottom: 25px;
+}
+.footer .social-list li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: solid 2px #606060;
+	border-radius: 4px;
+	transform: rotate(45deg);
+}
+.footer .social-list a{
+	display: block;
+	line-height: 26px;
+}
+.footer .social-list i {
+	color: #111;
+	transform: rotate(-45deg);
+}
+.footer .social-list li + li {
+	margin-left: 13px;
+}
+.footer .social-list {
+	margin-bottom: 107px;
+}
+.footer span {
+	display: block;
+}
+.footer span + span {
+	margin-top: 15px;
+	margin-bottom: 60px;
+}
+.footer .title {
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;;
+	letter-spacing: .5em;
+}
+.footer .footer-text {
+	font-size: 11px;
+	color: #999;
+	font-family: 'Dosis', sans-serif;
+}
+/* ===== Default component end ===== */
+/* ==== Guide styles start ==== */
+.guid-section form .form-control {
+	margin-bottom: 10px;
+}
+/* ==== Guide styles end ==== */
+/* ===== Custom style start ==== */
+.container-fluid {
+	max-width: 1500px;
+}
+.header {
+	overflow: hidden;
+	padding: 25px 0px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+}
+.header .logo {
+	float: left;
+}
+.header .header-nav {
+	float: right;
+}
+.header .header-nav li {
+	float: left;
+	line-height: 23px; 
+	color: rgba(255, 255, 255, .75);
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: .3em;
+	font-weight: 400;
+}
+.header .header-nav li+li {
+	margin-left: 31px; 
+}
+/* ----- Inner -----*/
+.inner {
+	background: url('../img/inner-bg.jpg') no-repeat center / cover;
+	height: 100vh;
+	text-align: center;
+	padding-top: 73px;
+}
+.inner::before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: -4px;
+}
+.inner .inner-content {
+	display: inline-block;
+	vertical-align: middle;
+}
+.inner .inner-content h1 { 
+	font-family: 'Dosis', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, .75);
+	letter-spacing: 1.7em;
+	text-indent: 1.7em;
+	margin-bottom: 100px;
+}
+.inner span {
+	display: block;
+	font-size: 19px;
+	color: rgba(255, 255, 255, .75);
+}
+/* ----- Inner end ----- */
+
+/* ----- About studio ----- */
+.team-wrapper {
+	margin-top: 108px;
+}
+.team-item .team-item-img {
+	position: relative;
+}
+.team-item .team-item-skills {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	transition: all .2s linear;
+}
+.team-item .team-item-img:hover .team-item-skills {
+	opacity: 1;
+}
+.team-item-info span {
+	display: block;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+}
+.team-item-name {
+	font-size: 15px;
+	margin-top: 30px; 
+}
+.team-item-role {
+	font-size: 12px;
+	margin-top: 15px;
+}
+.default-section.about-studio {
+    border-bottom: 1px solid rgba(236, 236, 236);
+}
+/* ----- About studio end ----- */
+
+/* ----- Why choose us ----- */
+
+.benefits-item span {
+	display: block;
+}
+.icon {
+	font-size: 48px;
+	margin-bottom: 35px;
+}
+.benefits-item .title-benefits {
+	font-family: 'Dosis Regular';
+	letter-spacing: .4em;
+	margin-bottom: 35px;
+	font-size: 14px;
+}
+.why-choose-us .row + .row {
+	margin-top: 82px;
+}
+/* ----- Why choose us end ----- */
+
+/* ----- Latest news ----- */
+.latest-news-title {
+	font-size: 11px;
+	letter-spacing: .4em;
+	color: #999;
+	float: right;
+}
+.latest-news-img img {
+	margin-bottom: 30px;
+	filter: grayscale(100%);
+}
+.latest-news-img img:hover {
+	filter: grayscale(0%);
+	transition: linear .5s;
+}
+.latest-news-img .title-news {
+	font-size: 15px;
+	letter-spacing: .2em;
+	color: #777;
+}
+.latest-news-item .title-news {
+	display: block;
+	margin-bottom: 17px;
+}
+.latest-news-item .latest-news-autor {
+	font-size: 11px;
+	letter-spacing: .4em;
+	color: #999;
+	display: block;
+	margin-bottom: 27px;
+}
+.latest-news-item .latest-news-text {
+	margin-bottom: 25px;
+}
+/* ----- Latest news end----- */
+/* ----- Services ----- */
+.services .title-services {
+	margin-bottom: 120px;
+}
+#tabs .tabs-nav li {
+	float: left;
+	width: 20%;
+	text-align: center;
+	font-size: 13px;
+	font-family: 'Dosis';
+	font-weight: 400;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	color: rgba(17, 17, 17, .5);
+}
+#tabs .tabs-nav li span {
+	display: block;
+}
+#tabs .tabs-nav {
+	overflow: hidden;
+	margin-bottom: 82px;
+}
+/* ----- Services end ----- */
+
+/* ----- Lets talk ----- */
+.lets-talk-content {
+	padding: 140px 0;
+}
+.lets-talk-content p {
+	color: rgba(255, 255, 255, .7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img {
+	margin-top: -32px;
+}
+/* ----- Lets talk end ----- */
+
+/* ----- Portfolio ----- */
+.portfolio-title span {
+	display: block;
+	margin-bottom: 79px;
+}
+.portfolio-title p {
+	margin: 0 auto 85px;
+	max-width: 755px;
+}
+#tabs-portfolio .tabs-nav li {
+	display: inline-block;	
+}
+#tabs-portfolio .tabs-nav li + li {
+	margin-left: 69px;
+}
+#tabs-portfolio .tabs-nav li span {
+	font-size: 13px;
+	letter-spacing: .4em;
+}
+#tabs-portfolio .tabs-nav {
+	margin-bottom: 50px;
+}
+#tabs-portfolio .portfolio-item .portfolio-img {
+	width: 33.33%;
+	padding: 4px;
+	float: left;
+	filter: grayscale(100%);
+}
+#tabs-portfolio .portfolio-item .portfolio-img:hover {
+	filter: grayscale(0);
+	transition: .5s linear;
+}
+#tabs-portfolio .portfolio-item {
+	overflow: hidden;
+	margin: 0 -4px;
+}
+.portfolio {
+	padding-bottom: 0;
+}
+/* ----- Portfolio end ----- */
+
+/* ===== Review carousel ===== */
+
+.reviews-carousel {
+	padding: 135px 0;
+	overflow: hidden;
+}
+.slick-dots {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 30px;	
+}
+.slick-dots li {
+	display: inline-block;
+	height: 9px;
+	width: 9px;
+	background-color: rgba(255, 255, 255, .8);
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slick-dots li button {
+	display: none;
+}
+.slick-dots li + li {
+	margin-left: 5px;
+}
+.slick-dots li.slick-active {
+	background-color: #000;
+	border-color: rgba(255, 255, 255, .8);
+}
+.slick-arrow {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 1;
+	width: 90px;
+	cursor: pointer;
+}
+.slick-arrow.slick-prev {
+	left: 0;
+}
+.slick-arrow.slick-next {
+	right: 0;
+}
+.slick-arrow .carousel-button {
+	width: 63px;
+	height: 63px;
+	background: #fff;
+	text-align: center;
+	line-height: 63px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	margin-left: -32px;
+	margin-top: -31px;
+}
+.slick-arrow.slick-next .carousel-button {
+	right: 0;
+	margin-right: -31px;
+}
+.slick-arrow .carousel-button .fa {
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.slick-arrow.slick-prev .carousel-button .fa {
+	bottom: 14px;
+	right: 17px;	
+}
+.slick-arrow.slick-next .carousel-button .fa {
+	top: 17px;
+	left: 14px;
+}
+/* ===== Review carousel end ===== */
+
+/* ----- Subscribe ----- */
+.subscribe form .form-control {
+	max-width: 293px;
+}
+.subscribe .form-info {
+	margin-top: 17px;
+}
+/* ----- Subscribe end ----- */
+
+/* ===== Custom style end ==== */
+
+
