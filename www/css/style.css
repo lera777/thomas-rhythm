@@ -38,8 +38,11 @@ input, textarea, button {
 	border: none;
 }
 button {
+	outline: none;
+	border: none;
 	cursor: pointer;
 	background-color: transparent;
+	padding: 0;
 }
 textarea {
 	resize: vertical;
@@ -69,6 +72,50 @@ blockquote {
 }
 .bg-grey {
 	background-color: #f8f8f8;
+}
+.m-auto {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.rhomb-icon {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size: 14px;
+	transform: rotate(45deg);
+}
+.rhomb-icon i {
+	transform: rotate(-45deg);
+}
+.rhomb-icon.black-icon {
+	color: #fff;
+	background-color: #111;
+}
+.rhomb-icon.white-icon {
+	color:#111;
+	background-color:#fff;
+}
+.rhomb-icon.transparent-icon {
+	color: #111;
+	border: solid 2px #606060;
+}
+.arrow-up {
+	font-size: 50px;
+	color: #c6c6c6;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	cursor: pointer;
 }
 /* ===== Default classes end */
 /* ===== Default component start ===== */
@@ -176,7 +223,7 @@ blockquote span,
 	border-color: #111;
 }
 textarea.form-control {
-	min-height: 82px;
+	min-height: 90px;
 	padding-top: 10px;
 }
 .form-control[disabled],
@@ -196,24 +243,10 @@ textarea.form-control {
 	font-size: 12px;
 }
 .footer .logo {
-	margin-top: 140px;
 	margin-bottom: 25px;
 }
-.footer .social-list li {
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	border: solid 2px #606060;
-	border-radius: 4px;
-	transform: rotate(45deg);
-}
-.footer .social-list a{
-	display: block;
-	line-height: 26px;
-}
-.footer .social-list i {
-	color: #111;
-	transform: rotate(-45deg);
+.footer .social-list li{
+	line-height: 19px; 
 }
 .footer .social-list li + li {
 	margin-left: 13px;
@@ -226,7 +259,6 @@ textarea.form-control {
 }
 .footer span + span {
 	margin-top: 15px;
-	margin-bottom: 60px;
 }
 .footer .title {
 	font-size: 12px;
@@ -238,6 +270,11 @@ textarea.form-control {
 	color: #999;
 	font-family: 'Dosis', sans-serif;
 }
+.footer {
+	background-color: #f8f8f8;
+	padding-top: 140px;
+	padding-bottom: 58px;
+}
 /* ===== Default component end ===== */
 /* ==== Guide styles start ==== */
 .guid-section form .form-control {
@@ -245,13 +282,10 @@ textarea.form-control {
 }
 /* ==== Guide styles end ==== */
 /* ===== Custom style start ==== */
-.container-fluid {
-	max-width: 1500px;
-}
 .header {
 	overflow: hidden;
 	padding: 25px 0px;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
 	z-index: 99;
@@ -323,9 +357,62 @@ textarea.form-control {
 	height: 100%;
 	background-color: #000;
 	transition: all .2s linear;
+	padding: 40px;
 }
 .team-item .team-item-img:hover .team-item-skills {
 	opacity: 1;
+}
+.skill-item span {
+	font-size: 11px;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	display: block;
+	margin-bottom: 7px;
+}
+.team-item-skills .skill-item + .skill-item {
+	margin-top: 25px;
+}
+.progress-wrapp {
+	width: 100%;
+	height: 12px;
+	background-color: rgba(255, 255, 255, .15);
+}
+.progress-wrapp .progress {
+	background-color: rgba(255, 255, 255, .75);
+	height: 12px;
+	width: 0%;
+	transition: width .5s ease-out;
+}
+.progress-wrapp .progress.branding {
+	transition: width .5s ease-out;
+}
+.progress-wrapp .progress.design {
+	transition: width .5s ease-out .2s;
+}
+.progress-wrapp .progress.development {
+	transition: width .5s ease-out .4s;
+}
+.progress-wrapp .progress.photography {
+	transition: width .5s ease-out .6s;
+}
+.team-item .team-item-img:hover .branding {
+	width: 75%;
+}
+.team-item .team-item-img:hover .design {
+	width: 86%;
+}
+.team-item .team-item-img:hover .development {
+	width: 81%;
+}
+.team-item .team-item-img:hover .photography {
+	width: 78%;
+}
+.team-item-skills p{
+	font-size: 13px;
+	color: rgba(255, 255, 255, .5);
+	line-height: 1.615em;
+	margin-bottom: 41px;
 }
 .team-item-info span {
 	display: block;
@@ -342,12 +429,11 @@ textarea.form-control {
 	margin-top: 15px;
 }
 .default-section.about-studio {
-    border-bottom: 1px solid rgba(236, 236, 236);
+    border-bottom: 1px solid rgba(19, 19, 219, .07);
 }
 /* ----- About studio end ----- */
 
 /* ----- Why choose us ----- */
-
 .benefits-item span {
 	display: block;
 }
@@ -356,7 +442,7 @@ textarea.form-control {
 	margin-bottom: 35px;
 }
 .benefits-item .title-benefits {
-	font-family: 'Dosis Regular';
+	font-family: 'Dosis', sans-serif;
 	letter-spacing: .4em;
 	margin-bottom: 35px;
 	font-size: 14px;
@@ -401,6 +487,7 @@ textarea.form-control {
 	margin-bottom: 25px;
 }
 /* ----- Latest news end----- */
+
 /* ----- Services ----- */
 .services .title-services {
 	margin-bottom: 120px;
@@ -422,6 +509,9 @@ textarea.form-control {
 #tabs .tabs-nav {
 	overflow: hidden;
 	margin-bottom: 82px;
+}
+#tabs .tabs-nav .ui-state-active{
+	color: #111;
 }
 /* ----- Services end ----- */
 
@@ -446,6 +536,7 @@ textarea.form-control {
 .portfolio-title p {
 	margin: 0 auto 85px;
 	max-width: 755px;
+	line-height: 1.733em;
 }
 #tabs-portfolio .tabs-nav li {
 	display: inline-block;	
@@ -460,19 +551,21 @@ textarea.form-control {
 #tabs-portfolio .tabs-nav {
 	margin-bottom: 50px;
 }
-#tabs-portfolio .portfolio-item .portfolio-img {
+#tabs-portfolio .portfolio-item{
 	width: 33.33%;
 	padding: 4px;
 	float: left;
 	filter: grayscale(100%);
 }
-#tabs-portfolio .portfolio-item .portfolio-img:hover {
+#tabs-portfolio .portfolio-item:hover {
 	filter: grayscale(0);
 	transition: .5s linear;
 }
-#tabs-portfolio .portfolio-item {
-	overflow: hidden;
+#tabs-portfolio {
 	margin: 0 -4px;
+}
+.portfolio-tabs-wrapper {
+	overflow: hidden;
 }
 .portfolio {
 	padding-bottom: 0;
@@ -480,10 +573,31 @@ textarea.form-control {
 /* ----- Portfolio end ----- */
 
 /* ===== Review carousel ===== */
-
+.icon-carousel {
+	font-size: 32px;
+	margin-bottom: 23px;
+	color: #fff;
+}
 .reviews-carousel {
 	padding: 135px 0;
 	overflow: hidden;
+}
+.reviews-carousel p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;	
+	line-height: 1.6667em;
+	color: rgba(255, 255, 255, .75);
+	margin-top: 44px;
+	margin-bottom: 27px;
+	width: 740px;
+	margin: 0 auto 24px;
+}
+.slide-content .review-author {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;	
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: rgba(255, 255, 255, .30);	
 }
 .slick-dots {
 	position: absolute;
@@ -564,6 +678,91 @@ textarea.form-control {
 }
 /* ----- Subscribe end ----- */
 
+/* ----- Contacts start ----- */
+.contact-items-wrapper {
+	margin-bottom: 80px;
+}
+.contact-item .contact-item-content {
+	display: inline-block;
+	vertical-align: middle;
+}
+.contact-item .contact-item-content {
+	margin-left: 15px;
+}
+.contact-item .contact-item-content span {
+	display: block;
+}
+.contact-form {
+	margin: 0px -5px;	
+}
+.form-row {
+	margin: 0px -5px;
+	overflow: hidden;
+}
+.form-submit {
+	margin-top: 20px;
+}
+.contact-form .form-col {
+	float: left;
+	width: 50%;
+	padding: 0 5px;
+}
+.contact-form .form-control + .form-control{
+	margin-top: 10px;
+}
+.contact-item-content .contact-title {
+	color: #777;
+	font-size: 12px;
+	letter-spacing: .3em;
+}
+.contact-item-content .contact-data {
+	color: #444;
+}
+.contact-item-content span + span {
+	margin-top: 14px;
+}
+.form-submit .form-info {
+	margin-top: 12px;
+}
+/* ----- Contacts end ----- */
+
+/* ----- Map start ----- */
+#map {
+	height: 410px;
+}
+.map-container {
+	position: relative;
+}
+.on-map-block {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .90);
+	top: 0;
+	left: 0;
+}
+.map-container:hover .on-map-block,
+.map-container:hover .on-map-info{
+	display: none;
+}
+.map-container .on-map-info{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.map-container .map-title {
+	display: block;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: .3em;
+	color: rgba(248, 248, 248, .75);
+}
+.map-container .rhomb-icon {
+	margin-bottom: 28px;
+}
+/* ----- Map end ----- */
 /* ===== Custom style end ==== */
 
 
