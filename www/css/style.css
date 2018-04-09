@@ -545,6 +545,7 @@ textarea.form-control {
 	margin-left: 69px;
 }
 #tabs-portfolio .tabs-nav li span {
+	color: rgba(17, 17, 17, .5);
 	font-size: 13px;
 	letter-spacing: .4em;
 }
@@ -569,6 +570,9 @@ textarea.form-control {
 }
 .portfolio {
 	padding-bottom: 0;
+}
+#tabs-portfolio .tabs-nav .ui-state-active span{
+	color: #111;
 }
 /* ----- Portfolio end ----- */
 
