@@ -288,14 +288,6 @@ textarea.form-control {
 /* ==== Guide styles end ==== */
 /* ===== Custom style start ==== */
 /* ----- Header -----*/
-/* .header {
-	overflow: hidden;
-	padding: 25px 0px;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: 99;
-} */
 .header {	
     position: absolute;
 	top: 0;
@@ -379,6 +371,17 @@ textarea.form-control {
 	.inner {
 		height: auto;
 		padding: 150px 0;
+	}
+}
+@media (max-width: 576px) {
+	.inner .inner-content h1 {
+		font-size: 22px;
+		letter-spacing: .5em;
+		text-indent: .5em;
+		margin-bottom: 30px;
+	}
+	.inner span {
+		font-size: 16px;
 	}
 }
 /* ----- Inner end ----- */
@@ -481,6 +484,9 @@ textarea.form-control {
 	}
 }
 @media (max-width: 767px) {
+	.default-section {
+		padding: 80px 0;
+	}
 	.default-section.about-studio .col {
 		width: 100%;
 	}
@@ -490,6 +496,9 @@ textarea.form-control {
 	.team-wrapper {
 		width: 100%;
 		text-align: center;
+	}
+	.team-item-role {
+		margin-bottom: 15px;
 	}
 }
 /* ----- About studio end ----- */
@@ -516,6 +525,9 @@ textarea.form-control {
 		text-align: center;
 		margin-bottom: 30px;
 	}	
+	.why-choose-us .row + .row {
+		margin-top: 10px;
+	}
 }
 /* ----- Why choose us end ----- */
 
@@ -563,6 +575,11 @@ textarea.form-control {
 		border-bottom: 2px solid #000;
 	}
 }
+@media (max-width:576px) {
+	.latest-news-title {
+		margin-top: 20px;;
+	}
+}
 /* ----- Latest news end----- */
 
 /* ----- Services ----- */
@@ -604,10 +621,16 @@ textarea.form-control {
 @media (max-width: 767px) {
     #tabs .tabs-nav li {	
 		width: 50%;	
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 	}
 	.tabs-wrapper {
 		width: 100%;
+	}
+	#tabs span.icon{
+		margin-bottom: 20px;
+	}
+	#branding div:last-of-type{
+		margin-top: 30px;
 	}
 }
 /* ----- Services end ----- */
@@ -683,14 +706,19 @@ textarea.form-control {
 	}
 }
 @media (max-width: 767px) {
+	#tabs-portfolio .portfolio-item {
+		width: 100%;
+	}
 	#tabs-portfolio li {
 		width: 100%;
-		margin-left: 0px;
 		margin-bottom: 20px;		
 	}
-	#tabs-portfolio .portfolio-item-img {
+	#tabs-portfolio .portfolio-item img{
 		display: block;
 		width: 100%;
+	}
+	#tabs-portfolio .tabs-nav li + li {
+		margin-left: 0;
 	}
 }
 /* ----- Portfolio end ----- */
@@ -792,13 +820,18 @@ textarea.form-control {
 }
 @media (max-width: 767px) {
 	.reviews-carousel p {	
-		font-size: 18px;
 		padding: 20px;	
 	}	
 	.reviews-carousel {
 		padding: 80px 0;		
-		margin-top: 80px;
-		margin-bottom: 60px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 576px) {
+	.reviews-carousel p {	
+		padding: 20px;	
+		max-width: 80%;
 	}
 }
 /* ===== Review carousel end ===== */
@@ -947,6 +980,4 @@ textarea.form-control {
 }
 /* только если сильно нужно для мобильных телефонов 320px */
 /* @media (max-width: 479px) {
-
 }*/ 
-

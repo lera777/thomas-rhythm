@@ -141,6 +141,7 @@
     .d-md-none{
         display: none;
     }
+}
     @media(max-width:991px){
         .col-md-1 {
             width:8.333333%;
@@ -181,8 +182,7 @@
         .d-md-none{
             display: none;
         }
-    }
-    
+    }   
     @media(max-width:767px){
         .col-sm-1 {
             width:8.333333%;
@@ -224,7 +224,6 @@
             display: none;
         }
     }
-    
     @media(max-width:576px){
         .col-xs-1 {
             width:8.333333%;
@@ -265,4 +264,4 @@
         .d-xs-none{
             display: none;
         }
-}
+    }
